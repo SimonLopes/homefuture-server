@@ -34,6 +34,6 @@ io.on('connection', () =>{
 })
 
 
-var server = http.listen(1700, () => {
+var server = http.listen(process.env.PORT || 1700, () => {
   console.log('server is running on port', server.address().port);
 });
